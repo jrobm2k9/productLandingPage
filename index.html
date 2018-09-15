@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<img src='pexels-photo-907049.jpeg' id="header-img" alt="Surf WorldWide"><h1 id="logo">Surf WorldWide</h1>
+		<nav id="nav-bar">
+			<a href="#vid-hr" class="nav-link">Video |</a>
+			<a href="#test-hr" class="nav-link">Testimonials |</a>
+			<a href="#price-hr" class="nav-link">Prices |</a>
+			<a href="#form-hr" class="nav-link">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<hr id="vid-hr">
+		<video id="video" alt="A video of a beach somewhere" controls>
+			<source src="Beach - 3998.mp4" type="video/mp4">
+		</video>
+		<hr id="test-hr">
+		<h2 id="testimony">Testimonials</h2>
+		<div id="container">
+			<div id="box1" class="identical">
+				<p>Surf WorldWide staff was very professional and very knowledgable teachers, we especially like Jimmy!  I finally caught my first wave! - Sara</p>
+			</div>
+			<div id="box2" class="identical">
+				<p>If you want to learn how to surf there's not a better company to teach you, awesome time! - Ken</p>
+			</div>
+			<div id="box3" class="identical">
+				<p>We will only recommend SWW, very fun! - Mary</p>
+			</div>
+		</div>
+		<hr id="price-hr">
+		<div>
+			<h2 id="alt-prices">Prices</h2>
+			<div id="prices">
+				<div class="price-class">
+					<p>1 Hour: $25</p>
+				</div>
+				<div class="price-class">
+					<p>1 day: $100</p>
+				</div>
+				<div class="price-class">
+					<p>$3 day weekend: $250</p>
+				</div>
+			</div>
+		</div>
+		<hr id="form-hr">
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<h3>Contact Form</h3>
+			<div id="form-container">
+				<div id="label">
+					<label for="name" class="survey">Name: </label>
+					<label for="email" class="survey">Email: </label>
+					<label for="comments" class="survey">Comments || Questions: </label>
+				</div>
+				<div id="input">
+					<input type="text" name="name" class="survey" placeholder="Full name">
+					<input type="email" id="email" placeholder="Email address" name="email" required class="survey">
+					<textarea class="survey"> </textarea>
+				</div>	
+			</div>		
+			<div id="practice">
+				<input type="submit" id="submit">
+			</div>
+		</form>
+	</main>
+</body>
+</html>

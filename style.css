@@ -1,0 +1,236 @@
+* {
+	/*order-color: black;
+	border-style: solid;
+	border-width: 1px;
+	margin: 10px;
+	padding: 5px;*/
+}
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: url('beach-beautiful-bridge-449627.jpg'), #dddddc;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 150px;
+}
+
+#header {
+	min-height: 50px;
+	width: 100%;
+	overflow: auto;
+	top: 0;
+	position: fixed;
+	background-color: #e3e4fa;
+	z-index: 8;
+	display: block;
+}
+
+#header-img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+#header img, h1{
+	float: left;
+	position: relative;
+}
+
+#header nav {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#logo {
+	font-family: 'Love Ya Like A Sister', cursive;
+	color: #43b7ba;
+}
+
+#nav-bar {
+	top: 0;
+	position: fixed;
+}
+
+a {
+	color: #43b7ba;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	color: red;
+}
+
+#video {
+	max-width:100%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+}
+
+h2 {
+	color: navy;
+	text-align: center;
+}
+
+#container {
+	display: flex;
+	min-height: 500px;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.identical {
+	display: flex;
+	flex: 20%;
+	min-width: 30%;
+	justify-content: center;
+}
+
+#box1 {
+	border-radius: 100% 70% 70% 100%;
+	background: linear-gradient(to top right, #dddddc 0%, #e3e4fa 50%, #43b7ba 100%);
+	color: #091834;
+	opacity: 0.75;
+}
+
+#box2 {
+	border-radius: 70% 100% 100% 70%;
+	background: linear-gradient(to left, #dddddc 0%, #e3e4fa 50%, #43b7ba 100%);
+	color: #091834;
+	opacity: 0.75;
+}
+
+#box3 { 
+	border-radius: 100% 70% 70% 100%;
+    background: linear-gradient(to top left, #43b7ba 0%, #e3e4fa 50%, #dddddc 100%);
+    color: #091834; 
+    opacity: 0.75;
+}
+
+.identical p {
+	align-self: center;
+	height: 20%;
+	text-align: center;
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size: large;
+	color: black;
+}
+
+hr {
+	margin: 0 !important;
+	padding: 0 !important;
+	border:0;
+	height: 1px;
+	background: white;
+}
+
+#prices {
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	min-height: 250px;
+}
+
+.price-class {
+	display: flex;
+	background-color: navy;
+	min-width: 30%;
+	border-radius: 50%;
+	opacity: .5;
+	justify-content: center;
+}
+
+.price-class p{
+	align-self: center;
+	color: white;
+	opacity: 1;
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size: x-large;
+}
+
+h3 {
+	text-align: center;
+}
+
+#form {
+	background-color: #e3e4fa;
+	opacity: .75;
+}
+
+#form-container {
+	display: flex;
+	flex-direction: row;
+	min-height: 250px;
+}
+
+.survey {
+	min-height: 20%;
+}
+
+#label, #input {
+	display: flex;
+	flex-direction: column;
+	min-width: 45%;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+#label {
+	text-align: right;
+}
+
+input, textarea {
+	background-color: #e3e4fa;
+}
+
+#practice{
+	position: relative;
+}
+
+#submit {
+	font-size: 30px;
+	position: relative;
+	animation: catchMeIfYouCan;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+@keyframes catchMeIfYouCan {
+	0% {
+		left:0%;
+		background-color: #43b7ba;
+	    color: black;
+	}
+	50%{
+		left:87%;
+		background-color: #dddddc;
+    	color: black;
+	}
+	100% {
+		left:0%;
+		background-color: #43b7ba;
+	    color: black;
+	}
+}
+
+#submit:hover {
+	animation-play-state: paused;
+}
+@media screen and (max-width: 600px) {
+	#nav-bar {
+		float: none;
+		width: 100%;
+	}
+
+	#container {
+		color: red;
+		display: flex;
+	}
+}
